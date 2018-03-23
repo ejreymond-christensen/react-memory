@@ -1,5 +1,11 @@
+html {
+  background-color: #273746;
+}
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-image: url("canyon.jpg"); background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
