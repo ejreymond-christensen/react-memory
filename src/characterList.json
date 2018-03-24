@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "image": "delores",
+    "chosen": "false"
+  },
+  {
+    "id": 2,
+    "image": "armistice",
+    "chosen": "false"
+  },
+  {
+    "id": 3,
+    "image": "bernard",
+    "chosen": "false"
+  },
+  {
+    "id": 4,
+    "image": "clementine",
+    "chosen": "false"
+  }
+
+]
