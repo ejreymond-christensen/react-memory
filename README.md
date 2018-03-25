@@ -1,3 +1,15 @@
+# Westworld Memory
+A react single page app that lets the user play memory themed as Westworld.
+
+### How to use Westworld Memory
+The object of the game is to click(shoot) each character only once. If you choose them twice you loose. Max points are 12.
+
+### How to run the program
+you can go to : https://ejreymond-christensen.github.io/react-memory/
+you can also clone the repo, run npm install and then `yarn start` to run it on your local machine.
+
+#### React info -
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
