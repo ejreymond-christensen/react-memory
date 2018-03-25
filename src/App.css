@@ -22,6 +22,13 @@
   font-size: large;
 }
 
+#dead{
+  max-width: 350px;
+}
+#gameover{
+  color: #C0392B;
+  font-family: sans-serif;
+}
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

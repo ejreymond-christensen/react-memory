@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
 import Nav from "./components/Nav";
-// import Wrapper from "./components/Wrapper"
+import Modal from 'react-responsive-modal';
 import Characters from "./components/Characters";
 import characterList from "./characterList.json";
-
+import dead from "./images/dead.png"
 
 class App extends Component {
 
@@ -12,9 +12,13 @@ class App extends Component {
     characterList,
     currentScore: 0,
     bestScore: 0,
-    message: "Only click a character once!"
+    message: "Only click a character once!",
+    open: false
   };
 
+  onCloseModal = () => {
+    this.setState({ open: false });
+  };
 
   choose = id => {
     const currentChoice =this.state.characterList.filter(chosen=> chosen.id === id)
@@ -26,6 +30,7 @@ class App extends Component {
           chosen.chosen = "false";
         });
         const winMessage= "Try again vaquero, "+currentChoice[0].image.charAt(0).toUpperCase() + currentChoice[0].image.slice(1)+" just killed you!";
+        this.setState({ open: true });
         this.setState({ message: winMessage });
         this.setState({ currentScore: 0});
         this.setState({ reset });
@@ -45,6 +50,7 @@ class App extends Component {
 };
 
   render() {
+    const { open } = this.state;
     return (
       <div>
         <Nav currentScore={this.state.currentScore} bestScore={this.state.bestScore} message={this.state.message} />
@@ -58,6 +64,10 @@ class App extends Component {
             />
           ))}
         </div>
+        <Modal open={open} onClose={this.onCloseModal} little>
+          <h2 id = "gameover">GAME OVER</h2>
+          <img src= {dead} alt= "game over" id="dead" />
+        </Modal>
       </div>
     );
   }
