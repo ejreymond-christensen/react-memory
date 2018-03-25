@@ -4,3 +4,8 @@
   margin: 10px;
   border: 2px solid #273746;
 }
+.character:hover{
+  -webkit-box-shadow: -4px 4px 17px 0px black;
+  -moz-box-shadow: -4px 4px 17px 0px black;
+  box-shadow: -4px 4px 17px 0px black;
+}

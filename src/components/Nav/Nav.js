@@ -14,7 +14,7 @@ const Nav = props => (
       Objective: Only choose'm once!
     </span>
     <span className= "navbar-text">
-      Score: 1 | Top Score: 9
+      Score: {props.currentScore} | Top Score: {props.bestScore}
     </span>
   </nav>
 );
