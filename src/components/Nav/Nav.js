@@ -11,7 +11,7 @@ const Nav = props => (
   <nav className= "navbar navbar-dark bg-dark">
     <span className= "navbar-brand mb-0 h1"><img src= {logo} style={styles.icon} alt="logo" />estworld Memory</span>
     <span className= "navbar-text">
-      Objective: Only choose'm once!
+      <h3>{props.message}</h3>
     </span>
     <span className= "navbar-text">
       Score: {props.currentScore} | Top Score: {props.bestScore}
