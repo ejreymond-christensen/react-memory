@@ -14,14 +14,26 @@ class App extends Component {
 
 
   choose = id => {
-    const newInfo= this.state.characterList.map(chosen=>{
-      if(chosen.id === id ){
-        chosen.chosen = true;
-      }
-  });
+    const currentChoice =this.state.characterList.filter(chosen=> chosen.id === id)
+      if (currentChoice[0].chosen === true){
+        console.log("you lose")
+        const reset = this.state.characterList.map(chosen=>{
+          chosen.chosen = "false";
+        });
+        this.setState({ reset });
+      }else{
+        const newInfo= this.state.characterList.map(chosen=>{
+          if(chosen.id === id ){
+            chosen.chosen = true;
+          }
+        });
+        this.setState({ newInfo });
+      };
+      console.log(this.state.characterList)
+};
 
-  this.setState({ newInfo });
-  console.log(this.state.characterList)
+change = id =>{
+
 };
 
   render() {

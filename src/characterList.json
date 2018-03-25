@@ -18,6 +18,47 @@
     "id": 4,
     "image": "clementine",
     "chosen": "false"
+  },
+  {
+    "id": 5,
+    "image": "elsie",
+    "chosen": "false"
+  },
+  {
+    "id": 6,
+    "image": "ford",
+    "chosen": "false"
+  },
+
+  {
+    "id": 7,
+    "image": "hector",
+    "chosen": "false"
+  },
+  {
+    "id": 8,
+    "image": "logan",
+    "chosen": "false"
+  },
+  {
+    "id": 9,
+    "image": "maeve",
+    "chosen": "false"
+  },
+  {
+    "id": 10,
+    "image": "mib",
+    "chosen": "false"
+  },
+  {
+    "id": 11,
+    "image": "teddy",
+    "chosen": "false"
+  },
+  {
+    "id": 12,
+    "image": "william",
+    "chosen": "false"
   }
 
 ]
