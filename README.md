@@ -1,7 +1,7 @@
 # Westworld Memory
 A react single page app that lets the user play memory themed as Westworld.
 
-### How to use Kiosque à Journaux
+### How to use Westworld Memory
 The object of the game is to click(shoot) each character only once. If you choose them twice you loose. Max points are 12.
 
 ### How to run the program
