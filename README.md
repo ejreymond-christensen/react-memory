@@ -1,5 +1,5 @@
 # Westworld Memory
-A react single page app that lets the user play memory themed as Westworld.
+A react single page app that lets the user play memory themed on Westworld.
 
 ### How to use Westworld Memory
 The object of the game is to click(shoot) each character only once. If you choose them twice you loose. Max points are 12.
